@@ -1,0 +1,22 @@
+server:
+  port: 8892
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/BhuvaneswariPerumal/cloudconfig-properties
+          username: bhuvaneswariperumal           
+          password: per@apr2017
+          search-paths:
+          - 'Employee*'
+      enabled: true
+    bus:
+      enabled: true
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+management:
+  security:
+    enabled: false
