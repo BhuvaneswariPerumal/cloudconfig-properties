@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    align : right;
+    border: 1px solid black;
+}
+
+td, th {
+    
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+th{
+background-color: #6495ED;
+}
+span
+{
+  font-color:blue;
+}
+
+</style>
+</head>
+<body>
+
+   <br/><br/>
+   <h1><b><font color="#008B8B">Orion QuickLinks</font></b></h1>
+
+ <br/><br/>
+<table>
+  <tr>
+    <th>Env–Org</th>
+    <th>CF Link</th>
+   </tr>
+  <tr>
+    <td>BSD-CCS-DEV</td>
+    <td><a th:href="${comcast_app_u1}"><font color="blue"><span th:text="${comcast_app_u1}"></span></font></a></td>
+  </tr>
+  <tr>
+    <td>BSD-CCS-QA</td>
+    <td><a th:href="${comcast_app_u1}"><font color="blue"><span th:text="${comcast_app_u1}"></span></font></a></td>
+  </tr>
+  <tr>
+    <td>BSD-CCS-INT</td>
+    <td><a th:href="${comcast_app_u1}"><font color="blue"><span th:text="${comcast_app_u1}"></span></font></a></td>
+  </tr>
+  <tr>
+    <td>BSD-CCS-STGA</td>
+    <td><a th:href="${comcast_app_g4}"><font color="blue"><span th:text="${comcast_app_g4}"></span></font></a></td>
+  </tr>
+  <tr>
+    <td>BSD-CCS-STGB</td>
+    <td><a th:href="${comcast_app_g4}"><font color="blue"><span th:text="${comcast_app_g4}"></span></font></a></td>
+  </tr>
+  <tr>
+    <td>BSD-CCS</td>
+    <td><a th:href="${comcast_app_g1}"><font color="blue"><span th:text="${comcast_app_g1}"></span></font></a>
+    <br/>
+    <a th:href="${comcast_app_g2}"><font color="blue"><span th:text="${comcast_app_g2}"></span></font></a>
+    </td>
+  </tr>
+  <tr>
+    <td>BSD-Orion-Widget-STGA</td>
+    <td><a th:href="${comcast_app_g4}"><font color="blue"><span th:text="${comcast_app_g4}"></span></font></a></td>
+  </tr>
+  <tr>
+    <td>BSD-Orion-Widget-STGB</td>
+    <td><a th:href="${comcast_app_g4}"><font color="blue"><span th:text="${comcast_app_g4}"></span></font></a></td>
+  </tr>
+  <tr>
+    <td>BSD-Orion-Widget</td>
+    <td><a th:href="${comcast_app_g1}"><font color="blue"><span th:text="${comcast_app_g1}"></span></font></a><br/>
+    <a th:href="${comcast_app_g2}"><font color="blue"><span th:text="${comcast_app_g2}"></span></font></a>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+</body>
+</html>
